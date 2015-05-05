@@ -1,0 +1,237 @@
+@CHARSET "UTF-8";
+
+body {
+	margin: 0;
+	padding: 0;
+	line-height: 1.4;
+	color: #333;
+	font-family: Arial, sans-serif;
+	font-size: 0.9em;
+}
+
+#login {
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	width: 50%;
+}
+
+#visit {
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	width: 90%;
+}
+
+#menu {
+	text-align: right;
+	margin-left: auto;
+	margin-right: auto;
+	width: 90%;
+}
+
+#info {
+	margin-left: auto;
+	margin-right: auto;
+	width: 50%;
+}
+
+#main {
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	width: 90%;
+}
+
+h2.title {
+	text-align: center;
+}
+.odd{
+	color: #000000;
+	background: #F0FFFF;
+}
+
+/* -------visitList.htmlのCSS------- */
+#customer {
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	width: 90%;
+	height: 290px;
+	overflow-y: auto;
+}
+
+#route {
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	width: 90%;
+}
+
+#customerListTable {
+	width: 80%;
+	height: auto;
+	margin: auto;
+	clear: both;
+	border-collapse: separate;
+	border-spacing: 0;
+	text-align: center;
+}
+
+#customerListTable th {
+	padding: 8px 10px;
+	text-align: center;
+}
+
+#customerListTable tbody td {
+	padding: 8px 10px;
+	text-align: left;
+}
+
+#visitList {
+	float: left;
+	width: 60%;
+}
+
+#visitListTable {
+	float: left;
+	width: 100%;
+	height: auto;
+	margin: auto;
+	clear: both;
+	border-collapse: separate;
+	border-spacing: 0;
+}
+
+#visitTable {
+	float: left;
+	width: 100%;
+	height: auto;
+	margin: auto;
+	clear: both;
+	border-collapse: separate;
+	border-spacing: 0;
+}
+
+#scheduleButon {
+	display: none;
+}
+
+#buttonAlt {
+	display: none;
+}
+
+#nearCustomer {
+	float: left;
+	text-align: left;
+}
+
+.fieldSearch {
+	display: none;
+}
+
+.searchButton {
+	float: left;
+	text-align: left;
+}
+
+#mapList {
+	float: left;
+	width: 40%;
+	height: 350px;
+}
+
+/* -------visitList.htmlのCSS------- */
+
+/* -------main.htmlのCSS------- */
+#schedule {
+	width: 80%;
+	height: auto;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	z-index: 1;
+}
+/* -------main.htmlのCSS------- */
+
+/* -------info.htmlのCSS------- */
+
+#info_all{
+	margin-left: auto;
+	margin-right: auto;
+	width: 342px;
+	border: 2px solid #aaa;
+	background: #fff;
+	position: fixed;
+	z-index: 3;
+}
+#info_close {
+	text-align:right;
+	display : block;
+}
+#info_event {
+	width: 100%;
+}
+#info_event h2 {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+}
+#eventDetail {
+	padding : 0;
+}
+
+#info_items {
+}
+
+#info_detail{
+}
+
+#info_notDone{
+	display : block;
+}
+
+#info_customer{
+	margin-left: 0;
+	margin-right: auto;
+	width: 100%;
+}
+
+#accountTable thead th{
+	text-align: left;
+}
+
+#info_modal-overlay {
+	z-index: 2;
+	width: 100%;
+	height: 120%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	background-color: rgba(0, 0, 0, 0.100);
+}
+
+/* -------info.htmlのCSS------- */
+
+
+/* -------ドラッグ＆ドロップのCSS------- */
+[draggable=true]{
+	-khtml-user-drag: element;
+/*  	-webkit-user-drag: element; */
+}
+
+#customerListTable tr{
+/* 	cursor: move; */
+}
+.selectCustomer{
+	margin: 10px 0;
+	cursor: pointer;
+}
+#dropbox {
+  /*単なるスタイリング*/
+  width:500px; height:100px; margin:20px; background-color:#CCFF66; border:1px solid #00cc00;
+  /*以下はwebkit系ブラウザでドラッグ＆ドロップを動かすための指定（ブラウザのサポートが進めば、必要なくなると思われます）*/
+  -khtml-user-drag: element;
+}
+
+/* -------ドラッグ＆ドロップのCSS------- */

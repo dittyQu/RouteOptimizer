@@ -1,0 +1,62 @@
+<div id="info_all">
+	<div id="info_close">
+<input type="button" value="閉じる" id="close">
+	</div>
+<!-- イベント詳細 -->
+<div id="info_event">
+	<h2>イベント詳細情報</h2>
+	<fieldset id="eventDetail">
+			<div id="info_tabs">
+			<ul>
+				<li><a href="#info_detail" id=""><span>イベント詳細</span></a></li>
+				<li><a href="#info_items" id="edit"><span>イベント更新</span></a></li>
+			</ul>
+			<div id="info_items">
+			<div id="info_updateButton">
+			<input type="button" id="updateButton" value="イベント更新">
+			</div>
+			<label for="eventTitle">タイトル</label>
+			<input id="eventTitle" name="eventTitle" tabindex="1" value="" ><br />
+			<label for="eventStart">開始時間</label>
+			<input id="eventStart" name="eventStart" tabindex="2" value="" ><br />
+			<label for="eventEnd">終了時間</label>
+			<input id="eventEnd" name="eventEnd" tabindex="3" value="" ><br />
+
+			</div>
+			
+			<div id="info_detail">
+			<label for="eventTitle">タイトル :</label><label id="titleDetail"></label><br>
+			<label for="eventStart">開始時間 :</label><label id="startDetail"></label><br>
+			<label for="eventEnd">終了時間 :</label><label id="endDetail"></label><br>
+			<label for="eventLocation">場所 :</label><label id="locationDetail"></label><br>
+			<div id="info_notDone">
+			<input type="button" value="お客様アンケート" id="questionnaire"><br>
+			<input	type="button" value="訪問結果報告" id="report">
+			</div>
+			</div>
+			</div>
+	</fieldset>
+
+</div>
+<!-- イベント詳細 -->
+<!-- お客様詳細 -->
+<div id="info_customer">
+		<table id="accountTable">
+			<caption>お客様口座情報</caption>
+			<thead>
+				<tr>
+					<th>支店</th>
+					<th>預金</th>
+					<th>口座番号</th>
+					<th>残高</th>
+				</tr>
+			</thead>
+			<tbody>
+			</tbody>
+		</table>
+			<input type="button" value="お客様情報詳細へ" id="customerInfo"><br>
+			<input type="button" value="取引履歴へ" id="tranzaction">
+</div>
+<!-- お客様詳細 -->
+</div>
+<div id="info_modal-overlay"></div>

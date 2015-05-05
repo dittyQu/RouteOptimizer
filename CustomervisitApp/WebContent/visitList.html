@@ -1,0 +1,47 @@
+<h2 class="title">訪問先ルート最適検索</h2>
+
+<div id="customer">
+	<table id="customerListTable" class="stripe">
+	</table>
+</div>
+<div id="route">
+	<div id="visitList">
+		<fieldset class="fieldSearch">
+			<input type="button" onclick="JavaScript:googleMap.calculateMaxDistance();" value="最適ルート検索" class='searchButton'>
+			<input type="button" onclick="JavaScript:googleMap.calculateMinDistance();" value="巡回ルート検索" class='searchButton'>
+			<div id="scheduleButon">
+				<input type="button" onclick="JavaScript:visitList.registerEvents();" value="スケジュールに反映">
+			</div>
+			<div id="buttonAlt">ルート検索してください</div>
+			<table id="visitListTable" class="stripe2">
+				<thead>
+					<tr>
+						<th>訪問順</th>
+						<th>お客様ID</th>
+						<th>お客様名</th>
+						<th>訪問滞在時間</th>
+						<th></th>
+					</tr>
+				</thead>
+			</table>
+		</fieldset>
+		<fieldset class="fieldSearch">
+			<input type="button" onclick="JavaScript:googleMap.searchNearCustomer();" value="最短検索" id="nearCustomer">
+			<table id="visitTable" class="stripe3">
+				<thead>
+					<tr>
+						<th>近場順</th>
+						<th>お客様ID</th>
+						<th>お客様名</th>
+						<th>訪問滞在時間</th>
+						<th>スケジュール登録</th>
+						<th></th>
+					</tr>
+				</thead>
+			</table>
+		</fieldset>
+<!-- 		<p>下のボックスに入れてください。</p> -->
+<!-- 		<div id="dropbox" dropzone="copy" ondragover="visitList.dragover(event)" ondrop="visitList.drop(event)"></div> -->
+	</div>
+	<div id="mapList"></div>
+</div>
